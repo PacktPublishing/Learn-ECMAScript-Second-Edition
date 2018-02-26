@@ -1,0 +1,2 @@
+isNaN(' '); // false => because Number(' ') is equal to 0 (a number)
+isNaN(true); // false => because Number(true) is equal to 1 (a number)

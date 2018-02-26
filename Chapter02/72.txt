@@ -1,0 +1,4 @@
+const arr = [0, 1, 1, 2, 3, 5, 8, 13];
+arr.includes(0); // true
+arr.includes(13); // true
+arr.includes(21); // false

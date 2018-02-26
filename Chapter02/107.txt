@@ -1,0 +1,6 @@
+const x = { foo: 1, __proto__: { bar: 2 } };
+const y = Object.create( 
+  Object.getPrototypeOf(x), 
+  Object.getOwnPropertyDescriptors(x) 
+);
+console.log(y.__proto__); // { bar: 2 }

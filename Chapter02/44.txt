@@ -1,0 +1,3 @@
+const string = "this is an interesting book and this book is quite good as well";
+console.log(string.endsWith("well")); // true
+console.log(string.lastIndexOf("well") + "well".length == string.length); // true

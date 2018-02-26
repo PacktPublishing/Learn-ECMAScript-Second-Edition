@@ -1,0 +1,4 @@
+
+let str1 = `hello!!!`; //template string
+let str2 = "hello!!!";
+console.log(str1 === str2); //output "true"

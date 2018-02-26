@@ -1,0 +1,5 @@
+const details = { 
+  get food1() { return 'tasty'; },
+  get food2() { return 'bad'; }
+};
+Object.getOwnPropertyDescriptors(details);

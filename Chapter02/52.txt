@@ -1,0 +1,5 @@
+var a = 20;
+var b = 10;
+var c = "JavaScript";
+var str = "My age is " + (a + b) + " and I love " + c;
+console.log(str);

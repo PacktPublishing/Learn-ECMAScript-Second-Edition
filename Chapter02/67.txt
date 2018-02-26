@@ -1,0 +1,3 @@
+const arr = document.querySelectorAll('div');
+/* arr.forEach( item => console.log(item.tagName) ) */ // => wrong
+Array.from(arr).forEach( item => console.log(item.tagName) ); // correct

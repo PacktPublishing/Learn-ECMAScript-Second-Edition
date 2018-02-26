@@ -1,0 +1,1 @@
+console.log("a".repeat(6)); //Output "aaaaaa"

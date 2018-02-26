@@ -1,0 +1,14 @@
+let tag = function(strings, aPLUSb, aSTARb) {
+  // strings is: ['a+b equals', 'and a*b equals']
+  // aPLUSb is: 30
+  // aSTARb is: 200
+  aPLUSb = 200;
+  aSTARb = 30;
+  return `a+b equals ${aPLUSb} and a*b equals ${aSTARb}`;
+};
+
+let a = 20;
+let b = 10;
+
+let str = tag `a+b equals ${a+b} and a*b equals ${a*b}`;
+console.log(str);

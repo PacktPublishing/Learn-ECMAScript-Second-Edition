@@ -1,0 +1,4 @@
+const x = 12;
+const arr = [11, 12, 13];
+const result = arr.findIndex( (value, index, array) => value == x );
+console.log(result); 

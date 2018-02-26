@@ -1,0 +1,5 @@
+'normal'.padEnd(7);
+'1'.padEnd(3, '0');
+'My Awesome String'.padEnd(20, '*');
+''.padEnd(10, '*');
+'Hey!'.padEnd(13, 'But this is long');

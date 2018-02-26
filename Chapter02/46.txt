@@ -1,0 +1,5 @@
+" normal"
+"001"
+"****My Awesome String"
+"**********"
+"But this Hey!"

@@ -1,0 +1,5 @@
+"normal "
+"100"
+"My Awesome String***"
+"**********"
+"Hey!But this "

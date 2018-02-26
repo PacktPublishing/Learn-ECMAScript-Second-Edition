@@ -1,0 +1,3 @@
+const string = "this is a sentence.";
+console.log(string.startsWith("this")); // true => starts with "this"
+console.log(string.indexOf("this") == 0); // true => starts with "this"

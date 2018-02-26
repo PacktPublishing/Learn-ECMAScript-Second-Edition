@@ -1,0 +1,1 @@
+let buffer = new ArrayBuffer(80); //80 bytes size

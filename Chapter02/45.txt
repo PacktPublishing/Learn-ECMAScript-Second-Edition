@@ -1,0 +1,5 @@
+'normal'.padStart(7);
+'1'.padStart(3, '0');
+'My Awesome String'.padStart(20, '*');
+''.padStart(10, '*');
+'Hey!'.padStart(13, 'But this is long');

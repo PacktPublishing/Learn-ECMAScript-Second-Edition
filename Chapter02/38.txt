@@ -1,0 +1,2 @@
+const str = "Hi, I am a JS Developer";
+console.log(str.startsWith('Hi, I am')); //Output "true"

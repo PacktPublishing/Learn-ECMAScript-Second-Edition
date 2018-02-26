@@ -1,0 +1,7 @@
+const arr = ['apple', 'mango', 'banana'];
+console.log(arr.indexOf('apple')); // 0
+console.log(arr.indexOf('mango')); // 1
+console.log(arr.indexOf('apple') >= 0); // true => apple exists
+console.log(arr.includes('apple')); // true => apple exists
+console.log(arr.indexOf('pineapple') >= 0); // false => pineapple doesn't exists
+console.log(arr.includes('pineapple')); // false => pineapple doesn't exists

@@ -1,0 +1,9 @@
+
+let a = "NaN";
+let b = NaN;
+let c = "hello";
+let d = 12;
+console.log(Number.isNaN(a)); // false
+console.log(Number.isNaN(b)); // true
+console.log(Number.isNaN(c)); // false
+console.log(Number.isNaN(d)); // false

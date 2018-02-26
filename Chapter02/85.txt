@@ -1,0 +1,6 @@
+const arr = [1, 3, 5, 7, 9, 10, 11];
+const isAnyElementEven = arr.some( elem => { 
+   console.log('Checking '+elem); 
+   return elem % 2 == 0
+});
+console.log(isAnyElementEven); // true

@@ -1,0 +1,5 @@
+let tag = function(strings, ...values) {
+  return strings.raw[0]
+};
+let str = tag `Hello \n World!!!`;
+console.log(str);

@@ -1,0 +1,2 @@
+let s = String.raw `xy\n${ 1 + 1 }z`;
+console.log(s);

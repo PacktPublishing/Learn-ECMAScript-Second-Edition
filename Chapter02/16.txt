@@ -1,0 +1,5 @@
+function epsilonEqual(a, b) {
+  return Math.abs(a - b) < Number.EPSILON;
+}
+console.log(epsilonEqual(0.1 + 0.2, 0.3));
+console.log(epsilonEqual(0.9 - 0.8, 0.1));

@@ -1,0 +1,2 @@
+const \u0061 = "\u0061\u0062\u0063";
+console.log(a); //Output is "abc"

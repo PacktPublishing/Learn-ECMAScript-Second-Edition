@@ -1,0 +1,4 @@
+
+console.log(Math.sign(11));
+console.log(Math.sign(-11));
+console.log(Math.sign(0));

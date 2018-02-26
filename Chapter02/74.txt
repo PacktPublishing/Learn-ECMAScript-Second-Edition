@@ -1,0 +1,3 @@
+const arr = ['Some elements I like', NaN, 1337, true, false, 0017];
+console.log(arr.includes(NaN)); // true
+console.log(arr.indexOf(NaN) >= 0); // false => indexOf says there is no NaN element in array

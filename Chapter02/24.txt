@@ -1,0 +1,2 @@
+console.log(Math.imul(590, 5000000)); //32-bit integer multiplication
+console.log(590 * 5000000); //64-bit floating-point multiplication

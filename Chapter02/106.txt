@@ -1,0 +1,14 @@
+{
+food1: {
+configurable: true,
+enumerable: true,
+get: function food1(){}, //the getter function
+set: undefined
+},
+food2: {
+configurable: true,
+enumerable: true,
+get: function food2(){}, //the getter function
+set: undefined
+}
+}

@@ -1,0 +1,4 @@
+let arr1 = Array(2);
+let arr2 = Array.of(2);
+console.log(arr1);
+console.log(arr2);

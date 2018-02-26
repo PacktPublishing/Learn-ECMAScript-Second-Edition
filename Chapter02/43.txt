@@ -1,0 +1,2 @@
+const string = "this is an interesting book and this book is quite good as well.";
+console.log(string.lastIndexOf("this"))
