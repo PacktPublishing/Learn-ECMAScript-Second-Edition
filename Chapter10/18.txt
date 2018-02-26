@@ -1,0 +1,11 @@
+const open = window.indexedDB.open("types", 1);
+
+open.onupgradeneeded = () => {
+    const dbHandler = open.result;
+    const storeHandler = dbHandler.createObjectStore("frontend");
+    storeHandler.add({
+        latestVersion: 5,
+        cool: "yes",
+        easy2use: "yes"
+    }, "HTML5");
+};

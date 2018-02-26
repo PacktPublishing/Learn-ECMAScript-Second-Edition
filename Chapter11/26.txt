@@ -1,0 +1,8 @@
+const blob = new Blob(['(',
+function() {
+    // web worker code here
+}.toString(),
+')()'], { type: 'application/javascript' }));
+
+const url = URL.createObjectURL(blob); // gives a url of kind blob:http://....
+const awesomeworker = new Worker(url);

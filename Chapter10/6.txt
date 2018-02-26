@@ -1,0 +1,2 @@
+const item = localStorage.getItem('myKey');
+console.log(item); // my awesome value

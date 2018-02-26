@@ -1,0 +1,2 @@
+localStorage.removeItem('myKey');
+console.log(localStorage.getItem('myKey')); // null

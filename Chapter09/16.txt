@@ -1,0 +1,4 @@
+history.go(5); // forwards the browser 5 times
+history.go(-1); // similar effect of clicking back button
+history.go(0); // refreshes page
+history.go(); // refreshes page

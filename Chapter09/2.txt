@@ -1,0 +1,4 @@
+<div id="myID">My Content Here</div>
+<script>
+const myID = document.getElementById('myID'); // myID now contains reference to the div above
+</script>

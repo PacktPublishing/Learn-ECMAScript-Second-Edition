@@ -1,0 +1,3 @@
+// myworker.js
+// .. some work
+postMessage({message: "killme"});

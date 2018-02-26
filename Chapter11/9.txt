@@ -1,0 +1,8 @@
+// myworker.js
+
+addEventListener('message', e => {
+    if(e.data.task == "add") {
+        const res = e.data.nums.reduce((sum, num) => sum+num, 0);
+        postMessage({task: "add", result: res}); // self.postMessage will also work
+    }
+});

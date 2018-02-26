@@ -1,0 +1,9 @@
+const now = performance.now();
+
+for(let i=0;i<1000;i++) {
+    localStorage.setItem(`myKey${i}`, `myValue${i}`);
+}
+
+const then = performance.now();
+console.log('Done')
+console.log(`Time taken: ${(then - now)/1000} milliseconds per operation`);

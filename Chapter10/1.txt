@@ -1,0 +1,3 @@
+document.cookie = "myFirstCookie=good;"
+document.cookie = "mySecondCookie=great;"
+console.log(document.cookie);

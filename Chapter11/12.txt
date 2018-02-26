@@ -1,0 +1,9 @@
+// myworker.js
+
+self.addEventListener('message', e => {
+    if(e.data.num2 == 0) {
+        throw "Cannot divide by 0";
+    } else {
+        postMessage({task: "divide", result: e.data.num1/e.data.num2 });
+    }
+});

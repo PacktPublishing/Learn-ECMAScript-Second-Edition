@@ -1,0 +1,5 @@
+// myworker.js
+
+self.addEventListener('message', e => {
+    console.log(e.data); // data sent by main script
+});

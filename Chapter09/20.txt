@@ -1,0 +1,1 @@
+history.replaceState({myName: "Mehul"}, "This is title of page", "/i_am_awesome");

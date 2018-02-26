@@ -1,0 +1,12 @@
+// script.js
+
+const awesomeworker = new Worker('myworker.js');
+awesomeworker.addEventListener('message', e => {
+    if(e.data.task == "add") { // task completed. do something with
+    result
+        document.write(e.data.result);
+    }
+});
+
+const data = {task: "add", nums: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]};
+awesomeworker.postMessage(data);

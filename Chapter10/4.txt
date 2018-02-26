@@ -1,0 +1,2 @@
+localStorage.setItem('myKey', 'awesome value');
+console.log('entry added');

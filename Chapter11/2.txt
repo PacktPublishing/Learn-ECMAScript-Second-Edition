@@ -1,0 +1,5 @@
+if(typeof window.Worker !== "function") {
+    // worker not available
+} else {
+    // good to go
+}

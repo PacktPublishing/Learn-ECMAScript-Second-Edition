@@ -1,0 +1,10 @@
+// myworker.js
+
+addEventListener('message', e => {
+    if(e.data.message == "doAjaxAndDie") {
+        fetch(...).then(data => {
+            postMessage(data);
+            close(); // or self.close();
+        });
+    }
+});

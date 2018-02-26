@@ -1,0 +1,4 @@
+window.addEventListener('storage', e => { 
+  console.log(e);
+});
+localStorage.setItem('myKey', 'myValue'); // note that this line was run in another tab

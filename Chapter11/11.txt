@@ -1,0 +1,8 @@
+// script.js
+
+const awesomeworker = new Worker('myworker.js');
+awesomeworker.postMessage({task: "divide", num1: 5, num2: 0})
+
+awesomeworker.addEventListener('error', e => {
+    console.log(e); // information of ErrorEvent
+});

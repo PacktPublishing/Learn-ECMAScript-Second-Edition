@@ -1,0 +1,8 @@
+<div data-attr="red">Make me red!</div>
+<div data-attr="blue">Make me blue!</div>
+
+<script>
+[...document.querySelectorAll('div[data-attr]')].map(div => {
+    div.style.color = div.attributes['data-attr'].value;
+});
+</script>

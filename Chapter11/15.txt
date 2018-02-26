@@ -1,0 +1,6 @@
+const ab = new ArrayBuffer(100);
+
+// add data to this arraybuffer
+console.log(ab.byteLength); // 100
+worker.postMessage(ab, [ab]);
+console.log(ab.byteLength); // 0 - ownership lost

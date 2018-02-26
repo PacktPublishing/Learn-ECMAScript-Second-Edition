@@ -1,0 +1,5 @@
+window.onpopstate = e => {
+    if(e.state !== null) {
+        console.log(e.state.myName); // Outputs "Mehul"
+    }
+}

@@ -1,0 +1,15 @@
+// myworker.js
+
+const ports = [];
+
+addEventListener('connect', e => {
+    const port = e.ports[0];
+    ports.push(port); // assemble all connections
+    port.start();
+    // .. other info
+});
+
+addEventListener('error', e => {
+    console.log(e); // Info about error
+    ports.forEach(port => port.postMessage({type: 'error', res: e}));
+});

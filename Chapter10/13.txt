@@ -1,0 +1,2 @@
+sessionStorage.removeItem('myKey');
+console.log(sessionStorage.getItem('myKey')); // null

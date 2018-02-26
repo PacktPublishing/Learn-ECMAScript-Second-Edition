@@ -1,0 +1,24 @@
+// worker.js
+let sharedMem;
+
+addEventListener('message', ({data}) => {
+  //console.log(data);
+    if(data.message == 'sab') {
+        sharedMem = data.memory;
+        console.log('Memory ready');
+    }
+    if(data.cmd == 'start') {
+      console.log('Iterations ready');
+        startCounting(data.iterations);
+    }
+});
+
+function startCounting(limit) {
+    const arr = new Uint32Array(sharedMem);
+    let count = 0;
+    for(let i=0;i<limit;i++) {
+        count += 1;
+    }
+    Atomics.add(arr, 0, count);
+    postMessage('done')
+}

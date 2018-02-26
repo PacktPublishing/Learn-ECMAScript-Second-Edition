@@ -1,0 +1,5 @@
+localStorage.setItem('getItem', 'whohoo we are not overwriting getItem'); // #1
+localStorage.getItem('getItem'); // whohoo we are not overwriting getItem
+
+localStorage.getItem = 'oh no I'm screwed'; // #2 
+localStorage.getItem('getItem'); // Error! getItem is not a function.

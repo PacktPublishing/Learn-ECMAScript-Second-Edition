@@ -1,0 +1,13 @@
+<script>
+function copy2Clipboard(text) {
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.focus();
+  textarea.setSelectionRange(0, text.length);
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+}
+</script>
+
+<button onclick="copy2Clipboard('Something good!')">Click me!</button>

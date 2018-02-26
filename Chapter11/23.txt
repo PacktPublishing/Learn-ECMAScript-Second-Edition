@@ -1,0 +1,9 @@
+// script.js
+
+const awesomeworker = new SharedWorker('myworker.js');
+awesomeworker.port.start(); 
+
+// some processing and some work
+
+awesomeworker.port.close();
+awesomeworker.port.postMessage("Are you still alive?"); // does not work | no effect

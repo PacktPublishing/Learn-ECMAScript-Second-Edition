@@ -1,0 +1,6 @@
+// script.js
+
+const awesomeworker = new SharedWorker('myworker.js');
+awesomeworker.port.start();
+
+awesomeworker.port.postMessage({type: 'cmd', action: 'die'});

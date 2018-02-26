@@ -1,0 +1,14 @@
+<span class="tag">Hello</span>
+<span class="tag">Hi</span>
+<span class="tag">Wohoo!</span>
+
+<script>
+const tags = document.getElementsByClassName('tag'); // This is a NodeList (not Array)
+try {
+  tags.map(tag => console.log(tag)); // ERROR! map is not a function
+} catch(e) {
+  console.log('Error ', e);
+}
+
+[...tags].map(tag => console.log(tag)); // No error
+</script>

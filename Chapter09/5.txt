@@ -1,0 +1,4 @@
+<div data-attr="coolDIV">Make me red!</div>
+<script>
+document.querySelector('div[data-attr]').style.color = 'red'; // div becomes red
+</script>

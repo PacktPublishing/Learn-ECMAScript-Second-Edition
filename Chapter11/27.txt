@@ -1,0 +1,4 @@
+if('serviceWorker' in navigator) {
+    // service worker available
+    // lets code
+}

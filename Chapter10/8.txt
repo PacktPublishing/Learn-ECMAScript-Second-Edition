@@ -1,0 +1,2 @@
+localStorage.clear();
+console.log(localStorage); // blank object {}

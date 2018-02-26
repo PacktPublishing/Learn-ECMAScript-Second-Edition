@@ -1,0 +1,7 @@
+// script.js
+
+const awesomeworker = new SharedWorker('myworker.js');
+awesomeworker.port.start(); // important
+awesomeworker.port.addEventListener('message', e => { // notice the .port
+    console.log('Shared worker says .. ', e.data);
+});

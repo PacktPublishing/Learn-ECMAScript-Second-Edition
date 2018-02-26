@@ -1,0 +1,2 @@
+localStorage.setItem('length', 100); // Stores "1" as string in localStorage
+localStorage.length = 100; // Ignored by localStorage

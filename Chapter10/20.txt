@@ -1,0 +1,7 @@
+const open = window.indexedDB.open("types", 1); // same database as above
+open.onsuccess = () => {
+    const dbHandler = open.result;
+    const transaction = dbHandler.transaction(['frontend'], 'readwrite');
+    const storeHandler = transaction.objectStore('frontend');
+    storeHandler.delete("HTML5");
+};

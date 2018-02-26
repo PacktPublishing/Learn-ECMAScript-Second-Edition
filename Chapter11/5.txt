@@ -1,0 +1,6 @@
+// script.js
+
+const awesomeworker = new Worker('myworker.js');
+awesomeworker.addEventListener('message', e => {
+    console.log(e.data); // data sent by worker
+});

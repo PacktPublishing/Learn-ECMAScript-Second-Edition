@@ -1,0 +1,20 @@
+<img id="img1" alt="Mozilla logo" />
+<img id="img2" alt="Google logo" />
+
+const get2Images = async () => {
+    const image1 = await fetch('https://cdn.mdn.mozilla.net/static/img/web-docs-sprite.22a6a085cf14.svg');
+    const image2 = await fetch('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png');
+    console.log(image1); // gives us response as an object
+    const blob1 = await image1.blob();
+    const blob2 = await image2.blob();
+    
+    const url1 = URL.createObjectURL(blob1);
+    const url2 = URL.createObjectURL(blob2);
+
+    document.getElementById('img1').src = url1;
+    document.getElementById('img2').src = url2;
+
+    return 'complete';
+}
+
+get2Images().then(status => console.log(status));

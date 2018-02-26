@@ -1,0 +1,7 @@
+// thread 1 - pseudo program code
+if variable == 5:
+    asyncOperationWhichTakes200MS()
+    // just here thread 2 modifies variable to 10
+    res = variable * 5
+    // res is now 50 instead of 25
+    // unpredicatable behavior ahead

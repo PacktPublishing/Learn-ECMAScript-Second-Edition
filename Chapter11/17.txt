@@ -1,0 +1,2 @@
+// myworker.js
+console.log('Hello world!');

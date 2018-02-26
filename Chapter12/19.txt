@@ -1,0 +1,20 @@
+// Main Script
+
+const sharedMem = new SharedArrayBuffer(4);
+const workers = [new Worker('worker.js'), new Worker('worker.js'), new Worker('worker.js'), new Worker('worker.js')];
+let workersDone = 0;
+
+const now = performance.now();
+
+for(let i=0;i<2;i++) {
+  workers[i].postMessage({message: 'sab', memory: sharedMem});
+
+  workers[i].addEventListener('message', data => {
+      if(++workersDone == 4) { // don't worry. this is thread safe ;)
+        console.log("All workers done. The memory is: ", new Uint32Array(sharedMem))
+        console.log(`Time taken: ${performance.now()-now}`)
+      }
+  });
+
+  workers[i].postMessage({cmd: 'start', iterations: 1000000000/workers.length});
+}

@@ -1,0 +1,11 @@
+// myworker.js
+
+addEventListener('connect', e => {
+    const port = e.ports[0];
+    port.start();
+    port.addEventListener('message', event => {
+        if(event.data.type == 'cmd' && event.data.action == 'die') {
+            self.close(); // terminates worker
+        }
+    });
+});

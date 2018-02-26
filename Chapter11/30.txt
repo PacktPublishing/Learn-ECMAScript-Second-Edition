@@ -1,0 +1,9 @@
+self.addEventListener('fetch', e => {
+    e.respondWith(async function() {
+        const response = await caches.match(e.request);
+        if(response) {
+            return response;
+        }
+        return fetch(e.request);
+  }());
+});

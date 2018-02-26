@@ -1,0 +1,7 @@
+fetch(link) 
+.then(data => {
+    // do something with data
+})
+.catch(err => {
+    // do something with error
+});

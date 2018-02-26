@@ -1,0 +1,2 @@
+sessionStorage.setItem('my key', 'awesome value');
+console.log('Added to session storage');

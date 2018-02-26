@@ -1,0 +1,14 @@
+// Main thread
+
+const sharedMem = new SharedArrayBuffer(4);
+
+function countSingleThread(limit) {
+    const arr = new Uint32Array(sharedMem);
+    for(let i=0; i<limit; i++) {
+        arr[0] = arr[0] + 1;
+    }
+}
+
+const now = performance.now();
+countSingleThread(1000000000);
+console.log(`Time Taken: ${performance.now() - now}`);

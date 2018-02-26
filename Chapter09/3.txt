@@ -1,0 +1,5 @@
+<div>My Content Here</div>
+<script>
+const div = document.getElementsByTagName('div')[0];
+div.innerHTML = "Cool"; // above div's text is replaced with "Cool"
+</script>

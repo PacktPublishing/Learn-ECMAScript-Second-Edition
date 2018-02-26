@@ -1,0 +1,22 @@
+// worker.js
+let sharedMem;
+
+addEventListener('message', ({data}) => {
+  //console.log(data);
+    if(data.message == 'sab') {
+        sharedMem = data.memory;
+        console.log('Memory ready');
+    }
+    if(data.cmd == 'start') {
+      console.log('Iterations ready');
+        startCounting(data.iterations);
+    }
+});
+
+function startCounting(limit) {
+    const arr = new Uint32Array(sharedMem);
+    for(let i=0;i<limit;i++) {
+        arr[0] += 1;
+    }
+    postMessage('done')
+}

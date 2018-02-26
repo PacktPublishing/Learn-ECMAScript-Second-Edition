@@ -1,0 +1,8 @@
+// sw.js
+
+self.addEventListener('install', e => {
+    e.waitUntil(async function() {
+        const cache = await caches.open('cacheArea');
+        await cache.addAll(['/', '/styles/main.css', '/styles/about.css']);
+    }());
+});

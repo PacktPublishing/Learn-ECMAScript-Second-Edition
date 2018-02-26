@@ -1,0 +1,9 @@
+// myworker.js
+addEventListener('connect', e => {
+    console.log(e.ports);
+    const port = e.ports[0];
+    port.start();
+    port.addEventListener('message', event => {
+        console.log('Some calling script says.. ', event.data);
+    });
+});

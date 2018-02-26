@@ -1,0 +1,9 @@
+// script.js
+
+const awesomeworker = new Worker('myworker.js');
+
+awesomeworker.addEventListener('message', e => {
+    if(e.data.message == "killme") {
+        awesomeworker.terminate(); // bye bye
+    }
+});

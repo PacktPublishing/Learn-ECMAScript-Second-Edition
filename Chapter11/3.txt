@@ -1,0 +1,3 @@
+// script.js loaded on index.html
+
+const awesomeWorker = new Worker('myworker.js');

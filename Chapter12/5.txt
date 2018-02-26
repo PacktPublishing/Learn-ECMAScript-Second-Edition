@@ -1,0 +1,5 @@
+const sab = new SharedArrayBuffer(1);
+const arr = new Uint8Array(sab);
+arr[0] = 5;
+
+console.log(Atomics.load(arr, 0));

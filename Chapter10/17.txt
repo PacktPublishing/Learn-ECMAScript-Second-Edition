@@ -1,0 +1,7 @@
+const open = window.indexedDB.open("types", 1);
+
+// Let us create a schema for the database
+open.onupgradeneeded = () => {
+    const dbHandler = open.result;
+    const storeHandler = dbHandler.createObjectStore("frontend");
+};

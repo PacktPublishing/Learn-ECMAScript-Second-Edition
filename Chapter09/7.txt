@@ -1,0 +1,9 @@
+function pageChanged() {
+  if (document.hidden) {
+    console.log('User is on some other tab/out of focus') // line #1
+  } else {
+    console.log('Hurray! User returned') // line #2
+  }
+}
+
+document.addEventListener("visibilitychange", pageChanged);

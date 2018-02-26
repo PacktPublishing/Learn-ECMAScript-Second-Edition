@@ -1,0 +1,2 @@
+const item = sessionStorage.getItem('myKey');
+console.log(item); // my awesome value

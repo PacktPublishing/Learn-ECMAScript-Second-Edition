@@ -1,0 +1,16 @@
+document.cookie = "awesomecookie=yes;";
+document.cookie = "ilovecookies=sure;";
+document.cookie = "great=yes";
+
+function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for(let i=0;i < cookies.length;i++) {
+        if(cookies[i].trim().indexOf(name) === 0) {
+            return cookies[i].split('=')[1];
+        }
+    }
+    return null;
+}
+
+console.log(getCookie("ilovecookies"));
+console.log(getCookie("doesnotexist"));

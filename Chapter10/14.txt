@@ -1,0 +1,2 @@
+sessionStorage.clear();
+console.log(sessionStorage); // blank object {}

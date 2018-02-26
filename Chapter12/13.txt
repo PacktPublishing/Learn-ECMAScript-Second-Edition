@@ -1,0 +1,6 @@
+const sab = new SharedArrayBuffer(1);
+const arr = new Uint8Array(sab);
+arr[0] = 5; // 5 is 0101 in binary.
+
+Atomics.or(arr, 0, 12); // 12 is 1100 in binary
+console.log(Atomics.load(arr, 0));

@@ -1,0 +1,9 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Cool Stuff!</title>
+    </head>
+    <body>
+        <p>Awesome!</p>
+    </body>
+</html>

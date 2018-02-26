@@ -1,0 +1,10 @@
+const headers = new Headers();
+headers.append("Allow-Secret-Access", "yeah-because-my-token-is-1337");
+
+const config = { method: 'POST', headers };
+
+const req = new Request('http://myawesomewebsite.awesometld/secretimage.jpg', config);
+
+fetch(req)
+.then(img => img.blob())
+.then(blob => myImageTag.src = URL.createObjectURL(blob));
