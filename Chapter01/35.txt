@@ -1,0 +1,4 @@
+bookName("ES8 Concepts"); // bookName is not a function
+var bookName = function(name) {
+   console.log("I'm reading " + name);
+}

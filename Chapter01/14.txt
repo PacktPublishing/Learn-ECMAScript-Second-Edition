@@ -1,0 +1,2 @@
+const pi = 3.141;
+pi = 4; // not possible in this universe, or in other terms, throws Read-only error

@@ -1,0 +1,6 @@
+let object = {
+myFunction(){
+console.log("Hello World!!!"); //Output "Hello World!!!"
+}
+}
+object.myFunction();

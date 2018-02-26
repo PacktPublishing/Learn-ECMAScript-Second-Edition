@@ -1,0 +1,3 @@
+   var object = {"name" : "John", "age" : 23};
+   var name = object.name;
+   var age = object.age;

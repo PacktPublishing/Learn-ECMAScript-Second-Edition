@@ -1,0 +1,4 @@
+var object = {};
+object["first"+"Name"] = "Eden";//"firstName" is the property name
+//extract
+console.log(object["first"+"Name"]); //Output "Eden"

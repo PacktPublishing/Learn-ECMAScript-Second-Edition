@@ -1,0 +1,3 @@
+let myCounter = counter(); // returns a function (with count = 1)
+myCounter(); // now returns 2
+myCounter(); // now returns 3

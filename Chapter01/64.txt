@@ -1,0 +1,6 @@
+var circumference = function(pi, r) {
+  var area = 2 * pi * r;
+  return area;
+}
+var result = circumference(3.141592, 3);
+console.log(result); //Output 18.849552

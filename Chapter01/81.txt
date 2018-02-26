@@ -1,0 +1,7 @@
+var fn = function (arg) {
+    alert(arg);
+}(function () { // <-- semicolon was missing here, this made it an argument for the function
+    alert(5);
+})();
+
+fn(7);

@@ -1,0 +1,2 @@
+var string1 = "I am an immutable";
+var string2 = string1.slice(4, 8);

@@ -1,0 +1,4 @@
+ var myArray = [1, 2, 3];
+ var a = myArray[0];
+ var b = myArray[1];
+ var c = myArray[2];

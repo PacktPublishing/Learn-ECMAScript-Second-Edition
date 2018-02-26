@@ -1,0 +1,3 @@
+   let object = {"name" : "John", "age" : 23};
+   let x, y;
+   ({name: x, age: y} = object);

@@ -1,0 +1,9 @@
+
+const a = {
+  name: "Mehul"
+};
+console.log(a.name);
+a.name = "Mohan";
+console.log(a.name);
+a = {}; //throws read-only exception
+

@@ -1,0 +1,3 @@
+ let [a, , b] = [1, 2, 3]; // notice -->, ,<-- (2 commas)
+ console.log(a);
+ console.log(b);

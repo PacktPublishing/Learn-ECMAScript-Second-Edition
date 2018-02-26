@@ -1,0 +1,5 @@
+let object = {
+["first" + "Name"]: "Eden",
+};
+//extract
+console.log(object["first" + "Name"]); //Output "Eden"

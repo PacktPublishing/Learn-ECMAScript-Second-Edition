@@ -1,0 +1,10 @@
+function foo(a) {
+   a();
+   function a() {
+      console.log("Mehul");
+   }
+}
+
+foo(); // ??
+foo( undefined ); // ??
+foo( function(){ console.log("Not Mehul"); } ); // ??

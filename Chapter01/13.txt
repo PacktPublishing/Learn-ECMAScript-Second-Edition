@@ -1,0 +1,7 @@
+for(var i=0;i<5;i++){
+  (function(arg) {
+    setTimeout(function() {
+      console.log(arg); 
+    }, 1000);
+  }(i));
+}

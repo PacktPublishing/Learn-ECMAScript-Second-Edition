@@ -1,0 +1,10 @@
+var fn = function (arg) {
+    console.log(arg);
+} // Semicolon missing
+
+// self invoking function
+(function () {
+    alert(5);
+})() // semicolon missing
+
+fn(7)

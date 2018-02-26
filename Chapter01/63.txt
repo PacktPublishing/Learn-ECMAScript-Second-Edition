@@ -1,0 +1,7 @@
+
+let circumference = (pi, r) => {
+  let ans = 2 * pi * r;
+  return ans;
+}
+let result = circumference(3.141592, 3);
+console.log(result); // Outputs 18.849552

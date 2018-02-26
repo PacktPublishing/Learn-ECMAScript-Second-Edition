@@ -1,0 +1,15 @@
+function myFunc(arg) {
+   console.log(arg);
+}
+
+function myFunc2(arg,) {
+   console.log(arg)
+} 
+
+let myFunc3 = (arg) => {
+   console.log(arg);
+};
+
+let myFunc4 = (arg,) => {
+   console.log(arg);
+}

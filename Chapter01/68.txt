@@ -1,0 +1,13 @@
+var car = {
+  name: 'Bugatti',
+  fuel: 0,
+  // site A
+  addFuel: function() {
+             // site B
+             setInterval(function() {
+              // site C
+              this.fuel++;
+              console.log("The fuel is now " + this.fuel);
+             }, 1000)
+           }
+}

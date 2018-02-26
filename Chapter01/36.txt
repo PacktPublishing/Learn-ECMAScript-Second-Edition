@@ -1,0 +1,5 @@
+var bookName; // hoisted above
+bookName("ES8 Concepts"); // bookName is not function because bookName is undefined
+bookName = function(name) { // initalization is not hoisted
+   console.log("I'm reading " + name);
+}

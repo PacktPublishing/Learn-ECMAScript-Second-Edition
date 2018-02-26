@@ -1,0 +1,3 @@
+let circumference = function(pi, r) { return 2 * pi * r; }
+let result = circumference(3.14, 3);
+console.log(result); //Output 18.849552

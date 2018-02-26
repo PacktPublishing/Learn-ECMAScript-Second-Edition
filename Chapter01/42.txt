@@ -1,0 +1,11 @@
+function foo(a) { 
+   // the moment below function is declared, the argument 'a' passed is overwritten.
+   function a() {
+      console.log("Mehul");
+   }
+   a();
+}
+
+foo();
+foo( undefined );
+foo( function(){ console.log("Not Mehul"); } );

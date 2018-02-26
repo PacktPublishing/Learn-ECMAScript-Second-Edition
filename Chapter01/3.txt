@@ -1,0 +1,9 @@
+var a = 0;
+var a = 1;
+alert(a); // alerts 1
+function myFunction() {
+ var b = 2;
+ var b = 3;
+ alert(b); // alerts 3
+}
+myFunction();

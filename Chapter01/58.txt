@@ -1,0 +1,1 @@
+   let {name: x, age: y} = {"name" : "John", "age" : 23};

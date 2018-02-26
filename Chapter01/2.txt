@@ -1,0 +1,12 @@
+ let a = 12; // accessible everywhere
+ function myFunction() {
+   console.log(a); // alerts 12
+   let b = 13;
+   if(true) {
+     let c = 14; // this is NOT accessible throughout the function!
+     alert(b); // alerts 13
+   }
+   alert(c); // alerts undefined
+ }
+ myFunction();
+ alert(b); // alerts undefined

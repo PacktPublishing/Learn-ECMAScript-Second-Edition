@@ -1,0 +1,18 @@
+
+ var a = 1;
+ let b = 2;
+ function myFunction() {
+   var a = 3; // different variable
+   let b = 4; // different variable
+   if(true) {
+     var a = 5; // overwritten
+     let b = 6; // different variable
+     console.log(a); // 5
+     console.log(b); // 6
+ }
+     console.log(a); // 5
+     console.log(b); // 4
+ }
+ myFunction();
+ console.log(a);
+ console.log(b);

@@ -1,0 +1,5 @@
+var book = { 
+  name: "Learning ES8", 
+  chapter: "1",
+  reader: "awesome", // trailing comma allowed here
+};
