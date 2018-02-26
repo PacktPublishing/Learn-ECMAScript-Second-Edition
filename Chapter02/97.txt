@@ -1,0 +1,7 @@
+const obj = {
+    book: "Learning ES2017 (ES8)",
+    author: "Mehul Mohan",
+    publisher: "Packt",
+    useful: true
+};
+console.log(Object.values(obj));

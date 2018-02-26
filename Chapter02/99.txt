@@ -1,0 +1,14 @@
+//In ES5
+var x = {prop1: 12};
+var y = Object.create(x, {prop2: {value: 13}});
+console.log(y.prop1); //Output "12"
+console.log(y.prop2); //Output "13"
+console.log(x); // Output: {prop1: 12}
+console.log(y); // Output: {prop2: 13}
+
+//In ES6 onwards
+let a = {prop1: 12, __proto__: {prop2: 13}};
+console.log(a.prop1); //Output "12"
+console.log(a.prop2); //Output "13"
+console.log(a); // Output: {prop1: 12}
+console.log(a.__proto__); // Output: {prop2: 13}

@@ -1,0 +1,8 @@
+let weakset = new WeakSet();
+(function(){ 
+   let a = {}; 
+   weakset.add(a);
+})();  //here 'a' is garbage collected from weakset
+console.log(weakset.size); //output "undefined"
+console.log(...weakset); //Exception is thrown
+weakset.clear(); //Exception, no such function
