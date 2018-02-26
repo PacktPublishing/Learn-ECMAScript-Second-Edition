@@ -1,0 +1,8 @@
+const proxy = new Proxy({}, { 
+defineProperty(target, property, descriptor) { 
+    Object.defineProperty(target, property, descriptor); 
+    return true; 
+} 
+}); 
+Reflect.defineProperty(proxy, "name", {value: "Eden"}); 
+console.log(proxy.name); //Output "Eden"

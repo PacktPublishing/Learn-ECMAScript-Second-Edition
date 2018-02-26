@@ -1,0 +1,8 @@
+const proxy = new Proxy({}, { 
+    setPrototypeOf(target, value) { 
+        Reflect.setPrototypeOf(target, value); 
+        return true; 
+    } 
+}); 
+
+Reflect.setPrototypeOf(proxy, {name: "Eden"}); console.log(Reflect.getPrototypeOf(proxy).name); //Output "Eden"

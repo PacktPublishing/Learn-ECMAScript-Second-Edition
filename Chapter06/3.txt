@@ -1,0 +1,8 @@
+var obj = {}
+Reflect.defineProperty(obj, "name", { 
+  value: "Eden", 
+  writable: true, 
+  configurable: true, 
+  enumerable: true 
+}); 
+console.log(obj.name); //Output "Eden"

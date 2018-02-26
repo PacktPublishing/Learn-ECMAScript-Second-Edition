@@ -1,0 +1,3 @@
+var obj = {}; 
+Reflect.setPrototypeOf(obj, { name: "Eden" }); 
+console.log(obj.name); //Output "Eden"

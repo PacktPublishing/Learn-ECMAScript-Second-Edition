@@ -1,0 +1,6 @@
+function Student() { 
+    this.name = "Eden"; 
+} 
+const obj = new Student(); 
+console.log(obj.__proto__.constructor == Student); //Output "true" 
+console.log(obj.__proto__ == Student.prototype); //Output "true"

@@ -1,0 +1,13 @@
+var obj1 = { __name__: "Eden" }; 
+Reflect.defineProperty(obj1, "name", { 
+  set: function(newName){ 
+    this.__name__ = newName; 
+  }, 
+  get: function(){ 
+    return this.__name__; 
+  }
+}); 
+var obj2 = { __name__: "John" };
+Reflect.set(obj1, "name", "Eden", obj2); 
+console.log(obj1.name); //Output "Eden" 
+console.log(obj2.__name__); //Output "Eden"

@@ -1,0 +1,19 @@
+const s = Symbol(); 
+const object = {age: 12, __proto__: {name: "Eden"}, [s]: "Symbol"}; Object.defineProperty(object, "profession", 
+{ 
+    enumerable: false, 
+    configurable: false, 
+    writable: false, 
+    value: "Developer" 
+}) 
+
+const proxy = new Proxy(object, { 
+    ownKeys(target) { 
+        return Object.getOwnPropertyNames(target).concat(Object.getOwnPropertySymbols(target)); 
+} 
+}); 
+
+console.log(Reflect.ownKeys(proxy)); 
+console.log(Object.getOwnPropertyNames(proxy)); 
+console.log(Object.keys(proxy)); 
+console.log(Object.getOwnPropertySymbols(proxy));

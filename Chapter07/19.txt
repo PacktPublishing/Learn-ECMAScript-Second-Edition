@@ -1,0 +1,7 @@
+const proxy = new Proxy({age: 12}, { 
+deleteProperty(target, property) { 
+    return delete target[property]; 
+} 
+}); 
+Reflect.deleteProperty(proxy, "age"); 
+console.log(proxy.age); //Output "undefined"

@@ -1,0 +1,10 @@
+const proxy = new Proxy({age: 12}, { 
+getOwnPropertyDescriptor(target, property) { 
+    return Object.getOwnPropertyDescriptor(target, property); 
+} 
+}); 
+
+const descriptor = Reflect.getOwnPropertyDescriptor(proxy, "age"); console.log("Enumerable: " + descriptor.enumerable); 
+console.log("Writable: " + descriptor.writable); 
+console.log("Configurable: " + descriptor.configurable); 
+console.log("Value: " + descriptor.value);

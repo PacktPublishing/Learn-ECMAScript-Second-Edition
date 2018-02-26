@@ -1,0 +1,2 @@
+const obj = { name: "Eden" } 
+console.log(obj.__proto__ == Object.prototype); //Output "true"

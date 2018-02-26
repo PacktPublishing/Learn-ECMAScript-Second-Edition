@@ -1,0 +1,5 @@
+const Student = function(name) { 
+    this.name = name; 
+}; 
+const s1 = new Student("Eden"); 
+console.log(s1.name); //Output "Eden"

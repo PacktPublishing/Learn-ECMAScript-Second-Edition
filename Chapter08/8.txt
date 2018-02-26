@@ -1,0 +1,21 @@
+function Student(name) { 
+    this.name = name; 
+} 
+Student.prototype.printName = function() { 
+    console.log(this.name); 
+} 
+
+const s1 = new Student("Eden"); 
+const s2 = new Student("John"); 
+
+function School(name) { 
+    this.name = name; 
+    this.printName = function() { 
+        console.log(this.name); 
+    } 
+} 
+
+const s3 = new School("ABC");
+const s4 = new School("XYZ"); 
+console.log(s1.printName == s2.printName); 
+console.log(s3.printName == s4.printName);

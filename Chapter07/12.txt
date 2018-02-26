@@ -1,0 +1,6 @@
+const proxy = new Proxy({age: 12}, { 
+isExtensible(target) { 
+    return Object.isExtensible(target); 
+} 
+}); 
+console.log(Reflect.isExtensible(proxy)); //Output "true"

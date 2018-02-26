@@ -1,0 +1,2 @@
+var student = {} 
+console.log(student.constructor == Object); //Output "true"

@@ -1,0 +1,4 @@
+Enumerable: true
+Writable: true
+Configurable: true
+Value: 12

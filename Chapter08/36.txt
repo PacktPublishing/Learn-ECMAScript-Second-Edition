@@ -1,0 +1,22 @@
+//Assume myArray1 is part of library 
+class myArray1 { 
+//default @@species. Child class will inherit this property 
+    static get [Symbol.species]() { 
+        //default constructor 
+        return this; 
+    } 
+    mapping() { 
+        return new this.constructor[Symbol.species](); 
+    } 
+} 
+
+class myArray2 extends myArray1 { 
+    static get [Symbol.species]() { 
+        return myArray1; 
+    } 
+}
+ 
+let arr = new myArray2(); 
+console.log(arr instanceof myArray2); //Output "true" 
+arr = arr.mapping(); 
+console.log(arr instanceof myArray1); //Output "true"

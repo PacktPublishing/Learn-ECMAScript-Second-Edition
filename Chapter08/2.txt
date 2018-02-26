@@ -1,0 +1,12 @@
+function Student(name) {  
+    this.name = name; 
+} 
+
+Student.prototype.printName = function(){  
+    console.log(this.name); 
+}
+
+const student1 = new Student("Eden"); 
+const student2 = new Student("John"); 
+student1.printName(); //Output "Eden" 
+student2.printName(); //Output "John"

@@ -1,0 +1,11 @@
+const revocableProxy = Proxy.revocable({ age: 12 }, { 
+get(target, property, receiver) { 
+    if(property in target) {
+         return target[property]; 
+    }
+    return "Not Found";  
+} 
+}); 
+console.log(revocableProxy.proxy.age); 
+revocableProxy.revoke(); 
+console.log(revocableProxy.proxy.name);

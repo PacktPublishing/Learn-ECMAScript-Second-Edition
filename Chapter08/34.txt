@@ -1,0 +1,7 @@
+class myClass { 
+    constructor() { 
+        return Object.create(null); 
+    } 
+} 
+
+console.log(new myClass() instanceof myClass); //Output "false"

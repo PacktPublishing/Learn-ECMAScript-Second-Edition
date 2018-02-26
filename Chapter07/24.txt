@@ -1,0 +1,8 @@
+const proxy = new Proxy(function(){}, { 
+    construct(target, arguments) { 
+        return {name: arguments[0]}; 
+    } 
+}); 
+
+const obj = new proxy("Eden"); 
+console.log(obj.name); //Output "Eden"

@@ -1,0 +1,12 @@
+const proxy = new Proxy({ 
+    age: 12 
+}, { 
+get(target, property, receiver) { 
+    if(property in target) { 
+        return target[property]; 
+    }
+    return "Property not found!"; 
+} 
+}); 
+console.log(proxy.age); 
+console.log(proxy.name);

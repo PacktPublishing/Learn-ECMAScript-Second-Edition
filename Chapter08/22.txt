@@ -1,0 +1,3 @@
+Name is: Eden and Age is: 12
+true
+true

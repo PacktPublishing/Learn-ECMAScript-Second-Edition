@@ -1,0 +1,20 @@
+class myCustomArray1 extends Array {  
+    static get [Symbol.species]()  {  
+        return Array;  
+    } 
+} 
+
+class myCustomArray2 extends Array{} 
+
+var arr1 = new myCustomArray1(0, 1, 2, 3, 4); 
+var arr2 = new myCustomArray2(0, 1, 2, 3, 4); 
+
+console.log(arr1 instanceof myCustomArray1); // Outputs "true"
+console.log(arr2 instanceof myCustomArray2); // Outputs "true"
+arr1 = arr1.map(value => value + 1); 
+arr2 = arr2.map(value => value + 1); 
+
+console.log(arr1 instanceof myCustomArray1);  // Outputs "false"
+console.log(arr2 instanceof myCustomArray2);  // Outputs "true"
+console.log(arr1 instanceof Array); // Outputs "true"
+console.log(arr2 instanceof Array); // Outputs "true"

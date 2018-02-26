@@ -1,0 +1,8 @@
+const target = {  age: 12 }; 
+const handler = {}; 
+const proxy = new Proxy(target, handler); 
+proxy.name = "Eden"; 
+console.log(target.name); 
+console.log(proxy.name); 
+console.log(target.age); 
+console.log(proxy.age);

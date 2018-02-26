@@ -1,0 +1,7 @@
+const proxy = new Proxy({age: 12}, { 
+has(target, property) { 
+    return property in target;
+}
+}); 
+console.log(Reflect.has(proxy, "name")); 
+console.log(Reflect.has(proxy, "age"));

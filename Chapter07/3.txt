@@ -1,0 +1,2 @@
+var proxy = new Proxy({ age: 12 }, {}); 
+proxy.name = "Eden";

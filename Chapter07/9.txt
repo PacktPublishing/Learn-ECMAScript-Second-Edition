@@ -1,0 +1,8 @@
+const proxy = new Proxy({}, { 
+set(target, property, value, receiver) { 
+    target[property] = value; 
+    return true; 
+} 
+}); 
+proxy.name = "Eden";
+console.log(proxy.name); //Output "Eden"

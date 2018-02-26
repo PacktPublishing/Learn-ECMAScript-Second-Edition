@@ -1,0 +1,18 @@
+class Person { 
+    constructor(name) { 
+        this._name_ = name; 
+    } 
+    get name() { 
+        return this._name_; 
+    } 
+    set name(name) {
+        this.someOtherCustomProp = true;
+        this._name_ = name; 
+    } 
+} 
+
+const p = new Person("Eden"); 
+console.log(p.name); // Outputs: "Eden"
+p.name = "John"; 
+console.log(p.name); // Outputs: "John"
+console.log(p.someOtherCustomProp); // Outputs: "true"

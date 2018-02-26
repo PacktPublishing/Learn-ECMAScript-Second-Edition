@@ -1,0 +1,9 @@
+var obj = { __name__: "Eden" };
+Reflect.defineProperty(obj, "name", { 
+  get: function(){ 
+    return this.__name__; 
+  } 
+}); 
+console.log(obj.name); //Output "Eden" 
+var name = Reflect.get(obj, "name", {__name__: "John"}); 
+console.log(name); //Output "John"

@@ -1,0 +1,6 @@
+const s1 = "String"; 
+const s2 = new String("String"); 
+console.log(typeof s1); 
+console.log(typeof s2); 
+console.log(s1 == s2); 
+console.log(s1.length);

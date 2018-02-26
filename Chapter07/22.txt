@@ -1,0 +1,10 @@
+const proxy = new Proxy(function(){}, { 
+    apply(target, thisValue, arguments) { 
+        console.log(thisValue.name); 
+        return arguments[0] + arguments[1] + arguments[2]; 
+    } 
+});
+
+const obj = { name: "Eden", f: proxy } 
+const sum = obj.f(1,2,3); 
+console.log(sum);

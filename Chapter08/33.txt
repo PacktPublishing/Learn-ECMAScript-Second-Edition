@@ -1,0 +1,4 @@
+myFunc(); // fine
+function myFunc(){} 
+var obj = new myClass(); // throws error
+class myClass {}

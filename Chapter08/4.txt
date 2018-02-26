@@ -1,0 +1,12 @@
+const object1 = { name: "Eden", __proto__: {age: 24} } 
+const object2 = {name: "Eden" } 
+
+Object.setPrototypeOf(object2, {age: 24}); 
+
+const object3 = Object.create({age: 24}, {
+    name: {value: "Eden"}
+}); 
+
+console.log(object1.name + " " + object1.age); 
+console.log(object2.name + " " + object2.age); 
+console.log(object3.name + " " + object3.age);

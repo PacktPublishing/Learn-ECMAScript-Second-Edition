@@ -1,0 +1,7 @@
+const student = {  
+    name: "Eden",  
+    printName() {  
+        console.log(this.name);  
+    } 
+} 
+student.printName(); //Output "Eden"

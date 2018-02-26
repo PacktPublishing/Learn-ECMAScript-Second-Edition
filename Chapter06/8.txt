@@ -1,0 +1,6 @@
+var obj = { name: "Eden" }; 
+var descriptor = Reflect.getOwnPropertyDescriptor(obj, "name"); 
+console.log(descriptor.value); 
+console.log(descriptor.writable); 
+console.log(descriptor.enumerable); 
+console.log(descriptor.configurable);

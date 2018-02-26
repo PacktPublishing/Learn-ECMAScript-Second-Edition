@@ -1,0 +1,12 @@
+class Student {  
+    constructor(name)  {  
+        this.name = name;  
+    }  
+    static findName(student)  {  
+        return student.name;  
+    } 
+} 
+
+const s = new Student("Eden"); 
+const name = Student.findName(s); 
+console.log(name); //Output "Eden"

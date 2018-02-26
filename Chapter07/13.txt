@@ -1,0 +1,11 @@
+const proxy = new Proxy({
+    age: 12, 
+    __proto__: {name: "Eden"}
+}, 
+{ 
+    getPrototypeOf(target) { 
+        return Object.getPrototypeOf(target); 
+    } 
+}); 
+
+console.log(Reflect.getPrototypeOf(proxy).name); //Output "Eden"

@@ -1,0 +1,4 @@
+var obj = { name: "Eden" } 
+console.log(obj.name); //Output "Eden" 
+Reflect.deleteProperty(obj, "name"); 
+console.log(obj.name); //Output "undefined"

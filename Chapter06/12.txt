@@ -1,0 +1,6 @@
+var obj = { 
+  __proto__: { name: "Eden" }, 
+  age: 12 
+}; 
+console.log(Reflect.has(obj, "name")); //Output "true" 
+console.log(Reflect.has(obj, "age")); //Output "true"

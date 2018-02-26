@@ -1,0 +1,4 @@
+string
+object
+true
+6

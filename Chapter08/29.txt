@@ -1,0 +1,43 @@
+function A(a) { 
+    this.a = a; 
+} 
+
+A.prototype.printA = function(){ 
+    console.log(this.a); 
+}
+
+class B extends A {  
+    constructor(a, b)  {  
+        super(a);  
+        this.b = b;  
+    }  
+    
+    printB()  {  
+        console.log(this.b);  
+    }  
+
+    static sayHello()  {  
+        console.log("Hello");  
+    } 
+} 
+
+class C extends B {  
+    constructor(a, b, c)  {  
+        super(a, b);  
+        this.c = c;  
+    }  
+
+    printC()  {  
+        console.log(this.c);  
+    }  
+
+    printAll()  {  
+        this.printC();  
+        super.printB();  
+        super.printA();  
+    } 
+} 
+
+const obj = new C(1, 2, 3); 
+obj.printAll(); 
+C.sayHello();

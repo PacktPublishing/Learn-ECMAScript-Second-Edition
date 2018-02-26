@@ -1,0 +1,12 @@
+function myConstructor() { 
+    console.log(new.target.name); 
+} 
+
+class myClass extends myConstructor { 
+    constructor() { 
+        super(); 
+    } 
+} 
+
+const obj1 = new myClass(); 
+const obj2 = new myConstructor();
