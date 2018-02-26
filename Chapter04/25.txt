@@ -1,0 +1,16 @@
+var p1 = new Promise(function(resolve, reject){ 
+setTimeout(function(){ 
+resolve("Fulfillment Value 1"); 
+}, 1000);
+});
+var p2 = new Promise(function(resolve, reject){ 
+setTimeout(function(){
+resolve("fulfillment Value 2"); 
+}, 2000);
+});
+var arr = [p1, p2];
+Promise.race(arr).then(function(value){ 
+console.log(value); //Output "Fulfillment value 1"
+}, function(reason){ 
+console.log(reason);
+});

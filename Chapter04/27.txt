@@ -1,0 +1,28 @@
+function sendAsyncHTTP(url) {
+ return new Promise((resolve, reject) => {
+  const xhttp = new XMLHttpRequest()
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4) { // success
+    if(this.status == 200) {
+           resolve(xhttp.responseText)
+      } else {
+           console.log(this.readyState, this.status)
+           reject(xhttp.statusText) // failed
+      }
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+ })
+}
+
+async function doSomeTasks() {
+   const documentFile1 = await sendAsyncHTTP('http://example.com')
+   console.log('Got first document')
+   const documentFile2 = await sendAsyncHTTP('http://example.com/?somevar=true')
+   console.log('Got second document')
+   return documentFile2
+}
+
+doSomeTasks() // returns a Promise
+.then( res => console.log("res is a HTML file") ) 

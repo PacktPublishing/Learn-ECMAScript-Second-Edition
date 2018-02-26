@@ -1,0 +1,5 @@
+foo().then( res => {
+   bar().then( res2 => {
+     console.log('Both done')
+   })
+})

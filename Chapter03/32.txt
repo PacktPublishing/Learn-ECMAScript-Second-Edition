@@ -1,0 +1,5 @@
+function add(x, y){ 
+    x = parseInt(x); 
+    y = parseInt(y); 
+    return _add(x, y);
+}

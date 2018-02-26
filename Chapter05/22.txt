@@ -1,0 +1,3 @@
+// module.js
+const writeText2Div = text => document.getElementByID('text').innerText = text;
+export { writeText2Div };

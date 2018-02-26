@@ -1,0 +1,6 @@
+if(this.nextIndex < this.array.length) {
+  this.nextIndex++;
+  return { value: this.array[this.nextIndex], done: false }
+} else {
+  return { done: true }
+}

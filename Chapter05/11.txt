@@ -1,0 +1,12 @@
+// module.js
+
+const takeSquareAndAdd2 = num => {
+    return num*num + 2;
+}
+
+export { takeSquareAndAdd2 }; // #1
+export const someVariable = 100; // #2
+export function yourName(name) {
+    return `Your name ${name} is a nice name` 
+}; // #3
+export default "Holy moly this is interesting!" // #4

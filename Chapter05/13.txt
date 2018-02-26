@@ -1,0 +1,2 @@
+import string from './module.js'
+console.log(string)

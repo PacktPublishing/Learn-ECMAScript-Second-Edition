@@ -1,0 +1,16 @@
+const p1 = new Promise(function(resolve, reject){
+ setTimeout(function(){
+  reject("Error");
+ }, 1000);
+});
+
+const p2 = new Promise(function(resolve, reject){
+ setTimeout(function(){
+  resolve();
+ }, 2000);
+});
+
+const arr = [p1, p2];
+Promise.all(arr).then(null, function(reason){
+console.log(reason); //"Error" is logged after 1 second
+});

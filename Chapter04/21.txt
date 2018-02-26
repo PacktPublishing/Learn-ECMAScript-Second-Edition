@@ -1,0 +1,8 @@
+const p1 = Promise.reject(4);
+p1.then(null, function(value){
+console.log(value);
+});
+Promise.reject({name: "Eden"})
+.then(null, function(value){
+console.log(value.name);
+});

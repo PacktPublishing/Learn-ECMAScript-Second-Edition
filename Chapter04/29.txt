@@ -1,0 +1,7 @@
+async function doSomeTasks() {
+   const googleContents = await sendAsyncHTTP('http://google.com') // Line 1
+   console.log('Got one')
+   const packtContents = await sendAsyncHTTP('http://packtpub.com')
+   console.log('Got both')
+   return googleContents
+}

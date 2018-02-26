@@ -1,0 +1,13 @@
+const p1 = Promise.resolve(4);
+p1.then(function(value){
+  console.log(value);
+}); //passed a promise object
+
+Promise.resolve(p1).then(function(value){ 
+ console.log(value);
+});
+
+Promise.resolve({name: "Eden"})
+.then(function(value){ 
+  console.log(value.name);
+});

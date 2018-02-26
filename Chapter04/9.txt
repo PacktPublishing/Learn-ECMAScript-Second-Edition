@@ -1,0 +1,7 @@
+ajaxCall('http://example.com/page1', response1 => {
+   ajaxCall('http://example.com/page2'+response1, response2 => {
+     ajaxCall('http://example.com/page3'+response2, response3 => {
+       console.log(response3)
+     }
+   })
+})

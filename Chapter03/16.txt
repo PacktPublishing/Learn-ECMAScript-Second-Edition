@@ -1,0 +1,5 @@
+const arr = [1, 2]
+const iterator = arr[Symbol.iterator](); // returns you an iterator
+console.log(iterator.next())
+console.log(iterator.next())
+console.log(iterator.next())

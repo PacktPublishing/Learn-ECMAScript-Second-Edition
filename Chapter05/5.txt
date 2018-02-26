@@ -1,0 +1,3 @@
+const math = require("./math").math; 
+console.log(math.findSum(1, 2)); //Output "3" 
+console.log(math.findSub(1, 2)); //Output "-1" 

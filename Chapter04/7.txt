@@ -1,0 +1,24 @@
+function verify() {
+    try {
+        const result = confirm("Is the data correct?");
+        if (result) {
+        //make AJAX request to send data to server
+        } else {
+        //make AJAX request to send data to server
+        }
+    } catch(e) {
+        console.log("Exception: " + e.message);
+    }
+}
+
+function displayData(data) {
+    try {
+        const json = JSON.parse(data);
+        displayName(json);
+        displayProfession(json);
+        displayAge(json);
+        verify();
+    } catch(e) {
+        console.log("Exception: " + e.message);
+    }
+}

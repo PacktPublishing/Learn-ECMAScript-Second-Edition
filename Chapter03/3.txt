@@ -1,0 +1,2 @@
+const s = Symbol();
+console.log(typeof s); //Outputs "symbol"

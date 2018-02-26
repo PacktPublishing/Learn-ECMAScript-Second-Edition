@@ -1,0 +1,12 @@
+const sum =(x, y) => x + y;
+const sub = (x, y) => x - y;
+const math = { 
+  findSum(a, b) { 
+    return sum(a,b); 
+  }, 
+  findSub(a, b){ 
+    return sub(a, b); 
+  } 
+} 
+
+exports.math = math; // or module.exports.math = math

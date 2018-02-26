@@ -1,0 +1,4 @@
+// index.js
+
+console.log(require('string1.js')()); // <-- we're executing the imported function
+console.log(require('string2.js')());

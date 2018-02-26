@@ -1,0 +1,12 @@
+async function sendAsyncHTTP(url) {
+  const xhttp = new XMLHttpRequest()
+  xhttp.onreadystatechange = function() { // <-- hint
+    if (this.readyState == 4 && this.status == 200) {
+       return xhttp.responseText
+    } else {
+       throw xhttp.statusText
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}

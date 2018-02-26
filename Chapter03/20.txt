@@ -1,0 +1,12 @@
+function* generator_function(){ 
+  const a = yield 12;
+  const b = yield a + 1; 
+  const c = yield b + 2; 
+  yield c + 3; // Final Line
+}
+const generator = generator_function();
+console.log(generator.next().value);
+console.log(generator.next(5).value);
+console.log(generator.next(11).value);
+console.log(generator.next(78).value);
+console.log(generator.next().done);

@@ -1,0 +1,16 @@
+//Module Starts 
+
+(function(window){ 
+const sum =(x, y) => x + y;
+const sub = (x,y) => x - y;
+const math = { 
+  findSum(a, b) { return sum(a, b) }, 
+  findSub(a,b) { return sub(a, b) }
+} 
+window.math = math; 
+})(window) 
+
+//Module Ends 
+
+console.log(math.findSum(1, 2)); //Output "3" 
+console.log(math.findSub(1, 2)); //Output "-1"

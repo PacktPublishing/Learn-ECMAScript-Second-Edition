@@ -1,0 +1,4 @@
+async function ES8isCool() {
+   // asynchronous work
+   const information = await getES8Information() // Here getES8Information itself is an async function
+}

@@ -1,0 +1,2 @@
+import { takeSquareAndAdd2 as myFunc } from './module.js';
+console.log(myFunc(3))

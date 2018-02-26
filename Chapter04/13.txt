@@ -1,0 +1,5 @@
+foo()
+.then( res => bar() ) // bar() returns a Promise
+.then( res => {
+   console.log('Both done')
+})

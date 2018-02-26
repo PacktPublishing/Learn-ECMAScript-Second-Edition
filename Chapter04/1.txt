@@ -1,0 +1,6 @@
+const page1 = $.syncHTTP('http://example.com/page1');
+const page2 = $.syncHTTP('http://example.com/page2');
+const page3 = $.syncHTTP('http://example.com/page3');
+const page4 = $.syncHTTP('http://example.com/page4');
+
+console.log(page1, page2, page3, page4);

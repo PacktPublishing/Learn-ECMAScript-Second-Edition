@@ -1,0 +1,5 @@
+const doSomething = async () => {
+  const res1 = await p1()
+  const res2 = await p2()
+  return p3(res1, res2)
+}

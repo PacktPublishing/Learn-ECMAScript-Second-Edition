@@ -1,0 +1,8 @@
+const doSomething = () => {
+  return p1().then(res1 => {
+      return p2().then(res2 => {
+          // finally we need both res1 and res2 
+          return p3(res1, res2)
+        })
+    })
+}

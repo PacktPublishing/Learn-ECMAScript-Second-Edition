@@ -1,0 +1,4 @@
+// index.js
+import { writeText2Div as write2Div } from './module.js';
+write2Div('Hello world!')
+

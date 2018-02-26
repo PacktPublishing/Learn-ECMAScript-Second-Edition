@@ -1,0 +1,4 @@
+ajaxCallPromise('http://example.com/page1')
+.then( response1 => ajaxCallPromise('http://example.com/page2'+response1) )
+.then( response2 => ajaxCallPromise('http://example.com/page3'+response2) )
+.then( response3 => console.log(response3) )

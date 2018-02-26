@@ -1,0 +1,16 @@
+function* generator_function_1(){ 
+ yield 2; 
+ yield 3;
+}
+function* generator_function_2(){
+ yield 1; 
+ yield* generator_function_1(); 
+ yield* [4, 5];
+}
+const generator = generator_function_2();
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().done);

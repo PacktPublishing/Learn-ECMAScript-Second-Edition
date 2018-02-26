@@ -1,0 +1,4 @@
+
+mySymbol
+true
+mySymbol

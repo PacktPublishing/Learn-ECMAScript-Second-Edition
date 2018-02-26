@@ -1,0 +1,44 @@
+function displayName(json) {
+    try {
+        console.log(json.Name);
+    } catch(e) {
+        console.log("Exception: " + e.message);
+    }
+}
+
+function displayProfession(json) {
+    try {
+        console.log(json.Profession);
+    } catch(e) {
+        console.log("Exception: " + e.message);
+    }
+}
+
+function displayAge(json) {
+    try {
+        console.log(json.Age);
+    } catch(e) {
+        console.log("Exception: " + e.message);
+    }
+}
+
+function displayData(data) {
+    try {
+        const json = JSON.parse(data);
+        displayName(json);
+        displayProfession(json);
+        displayAge(json);
+    } catch(e) {
+        console.log("Exception: " + e.message);
+    }
+}
+
+$.ajax({
+url: "data.json", 
+success: function(result, status, responseObject) {
+    displayData(responseObject.responseText);
+}, 
+error: function(xhr,status,error) {
+    console.log("Cannot Make AJAX Request. Error is: " + error);
+}
+});

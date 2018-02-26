@@ -1,0 +1,2 @@
+import { takeSquareAndAdd2 } from './module.js';
+console.log(takeSquareAndAdd2(3))

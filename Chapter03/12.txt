@@ -1,0 +1,1 @@
+return this.nextIndex < this.array.length ? {value: this.array[this.nextIndex++], done: false} : {done: true}

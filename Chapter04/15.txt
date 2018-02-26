@@ -1,0 +1,3 @@
+setTimeout( () => {
+  // code here executes after TIME_DURATION milliseconds
+}, TIME_DURATION)

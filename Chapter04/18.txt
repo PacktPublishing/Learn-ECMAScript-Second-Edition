@@ -1,0 +1,3 @@
+ajaxPromiseCall('http://invalidURL.com')
+.then(success => console.log(success))
+.catch(failed => console.log(failed));

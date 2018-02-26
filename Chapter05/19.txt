@@ -1,0 +1,9 @@
+import x from "module-relative-path"; 
+import {x} from "module-relative-path"; 
+import {x1 as x2} from "module-relative-path"; 
+import {x1, x2} from "module-relative-path"; 
+import {x1, x2 as x3} from "module-relative-path"; 
+import x, {x1, x2} from "module-relative-path"; 
+import "module-relative-path"; 
+import * as x from "module-relative-path"; 
+import x1, * as x2 from "module-relative-path";

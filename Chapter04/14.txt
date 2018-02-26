@@ -1,0 +1,4 @@
+ajaxCallPromise('http://example.com/page1').then( 
+  successData => { console.log('Request was successful') },
+  failData => { console.log('Request failed' + failData) } 
+)

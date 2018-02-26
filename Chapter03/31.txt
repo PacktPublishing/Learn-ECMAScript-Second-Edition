@@ -1,0 +1,13 @@
+"use strict";
+function _add(x, y) {
+    return x + y; 
+}
+
+function add(x, y) {
+ x = parseInt(x);
+ y = parseInt(y);
+ const result = _add(x, y);
+ return result;
+}
+
+console.log(add(1, '1'));

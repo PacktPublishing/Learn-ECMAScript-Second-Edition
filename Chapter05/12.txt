@@ -1,0 +1,5 @@
+// index.js
+
+import myString, { takeSquareAndAdd2 } from './module.js'
+console.log(myString) // "Holy moly this is interesting"
+console.log(takeSquareAndAdd2(2)) // 6

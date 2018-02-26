@@ -1,0 +1,5 @@
+console.log('Hello');
+setTimeout( () => {
+  console.log('World')
+}, 0 ) // 0 second timeout (executes immediately)
+console.log('???')

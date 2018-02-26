@@ -1,0 +1,9 @@
+define(function(){ 
+  const sum = (x, y) => x + y
+  const sub = (x, y) => x - y
+  const math = { 
+    findSum(a, b) { return sum(a,b) }, 
+    findSub(a, b){ return sub(a, b); } 
+  } 
+  return math; 
+});

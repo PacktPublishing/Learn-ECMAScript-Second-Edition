@@ -1,0 +1,5 @@
+// index.js
+
+import * as myModule from './module.js'
+console.log(myModule.PI) // 3.14
+console.log(myModule.returnWhatYouSay("This is cool!"))

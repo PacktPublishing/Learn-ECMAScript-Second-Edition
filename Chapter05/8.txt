@@ -1,0 +1,3 @@
+// string2.js
+
+exports = () => "Amazing string" // this fails to export this function
